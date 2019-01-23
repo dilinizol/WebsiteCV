@@ -28,11 +28,18 @@ footer {
   height: 200px; 
 }
 
+.copyright{
+  float:left;
+}
+.LinkedIn-box{
+  float:right;
+}
+
 .vl {
   border-left: 2px solid darkred;
   height: 25px;
   position: absolute;
-  left: 51%;
+  left: 52%;
   margin-left: 0px;
   top: 0;
 }
