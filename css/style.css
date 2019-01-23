@@ -11,7 +11,7 @@
 
 body {
   background-color: #f5f5f5;
-  color: #4e4e4e;
+  color: #404040;
 }
 
 h1,
@@ -20,16 +20,42 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: darkred;
+}
+
+educationtitle{
+  color: darkred;
+}
+
+skills{
+  font-style: italic;
+}
+
+projecttitle{
+  font-weight: bold;
+}
+
+presidentrotaracttitle,
+transcendtitle,
+tssmutitle,
+financerotaracttitle {
+  color: #404040;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+t{
+  color: #f5f5f5;
 }
 
 a {
-  color: #1e1e1e;
+  color: gray;
+  font-weight: bold;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: darkred;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -52,7 +78,7 @@ a:hover {
 
 .box-shadow,
 .paralax-mf,
-.service-box,
+.box-shadow-full,
 .work-box,
 .card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
@@ -61,25 +87,6 @@ a:hover {
 .box-shadow-a,
 .button:hover {
   box-shadow: 0 0 0 4px #cde1f8;
-}
-
-.display-5 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.display-6 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
 }
 
 .bg-image {
@@ -133,35 +140,23 @@ a:hover {
   margin-top: 4rem;
 }
 
-/*--/ Title s /--*/
-
-.title-s {
-  font-weight: 600;
-  color: #1e1e1e;
-  font-size: 1.1rem;
-}
-
 /*--/ Title A /--*/
 
 .title-box {
   margin-bottom: 4rem;
 }
 
-.title-a {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.title-center {
+  font-size: 2rem;
+  margin-top: 3rem;
 }
 
 .subtitle-a {
-  color: #4e4e4e;
+  color: #404040;
 }
 
-.line-mf {
-  width: 40px;
-  height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
+.lead{
+  color: #404040;
 }
 
 /*--/ Title Left /--*/
@@ -179,7 +174,6 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
   width: 100px;
   bottom: -12px;
 }
@@ -194,43 +188,15 @@ a:hover {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
+  margin-top: 5rem;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*------/ Socials /------*/
-
-.socials {
-  padding: 1.5rem 0;
-}
-
-.socials ul li {
-  display: inline-block;
-}
-
-.socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
-  border-radius: 50%;
-  line-height: 1.4;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
-  transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-  background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
-}
-
 /*------/ Ul resect /------*/
 
 .ul-resect,
-.socials ul,
 .list-ico,
 .blog-wrapper .post-meta ul,
 .box-comments .list-comments,
@@ -250,51 +216,6 @@ a:hover {
   margin-right: 10px;
 }
 
-/*------/ Ico Circle /------*/
-
-.ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
-  display: block;
-}
-
-/*------/ Owl Carousel /------*/
-
-.owl-theme .owl-dots {
-  text-align: center;
-  margin-top: 18px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 18px;
-  height: 7px;
-  margin: 5px 5px;
-  background: #cde1f8;
-  border: 0px solid #cde1f8;
-  display: block;
-  transition: all 0.6s ease-in-out;
-  cursor: pointer;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #cde1f8;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
-  width: 25px;
-}
-
 /*--/ Scrolltop s /--*/
 
 .scrolltop-mf {
@@ -307,7 +228,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: white;
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -326,7 +247,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: gray;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -355,7 +276,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #f5f5f5;
 }
 
 #preloader:before {
@@ -420,7 +341,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: #404040;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -439,7 +360,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #1B1B1B;
+  color: darkred;
 }
 
 .navbar-b.navbar-trans .nav-link:hover:before,
@@ -459,48 +380,48 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: darkred;
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color: darkred;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-  color: #fff;
+  color: darkred;
 }
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #f5f5f5;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #404040;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: darkred;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: darkred;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: darkred;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: darkred;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -508,7 +429,7 @@ a:hover {
 }
 
 .navbar-b .navbar-brand {
-  color: #fff;
+  color: darkred;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -532,13 +453,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: gray;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color: #f5f5f5;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -603,7 +524,7 @@ a:hover {
 .intro {
   height: 100vh;
   position: relative;
-  color: #fff;
+  color: #f5f5f5;
 }
 
 .intro .intro-content {
@@ -623,15 +544,11 @@ a:hover {
 }
 
 .intro .intro-title {
-  color: #fff;
+  color: #f5f5f5;
   font-weight: 600;
   font-size: 3rem;
 }
 
-.intro .intro-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
 
 .intro .text-slider-items {
   display: none;
@@ -648,6 +565,7 @@ a:hover {
 .intro-single .intro-title {
   text-transform: uppercase;
   font-size: 3rem;
+  color: #f5f5f5;
 }
 
 .intro-single .breadcrumb {
@@ -664,7 +582,7 @@ a:hover {
 }
 
 .intro-single .breadcrumb a {
-  color: #fff;
+  color: darkred;
 }
 
 /*======================================
@@ -684,63 +602,19 @@ a:hover {
   margin-left: 10px;
 }
 
-.skill-mf span {
-  color: #4e4e4e;
-}
-
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #0078ff;
-}
 
 /*======================================
-//--//-->   SERVICES
+//--//-->   RESUME
 ======================================*/
 
-.service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
+.resume-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  font-size: 4rem;
-}
-
-.service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: .4rem 0;
-}
-
-.service-box .s-description {
-  color: #4e4e4e;
-}
 
 /*======================================
-//--//-->   COUNTER
+//--//-->   COUNTER 
 ======================================*/
 
 .counter-box {
@@ -799,68 +673,13 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
-}
-
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
-}
-
-.work-content .w-like a {
-  color: #0078ff;
-}
-
-.work-content .w-like .num-like {
-  font-size: .7rem;
+  color: #404040;
 }
 
 .w-title {
   font-size: 1.2rem;
 }
 
-/*======================================
-//--//-->   TESTIMONIALS
-======================================*/
-
-.testimonials .owl-carousel .owl-item img {
-  width: auto;
-}
-
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
-}
 
 /*======================================
 //--//-->   BLOG
@@ -1054,78 +873,6 @@ a:hover {
 }
 
 /*======================================
-//--//-->   CONTACT
-======================================*/
-
-.footer-paralax {
-  padding: 4rem 0 0 0;
-}
-
-.contact-mf {
-  margin-top: 4rem;
-}
-
-/*======================================
-//--//-->   FOOTER
-======================================*/
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding-bottom: 4rem;
-}
-
-footer .copyright {
-  margin-bottom: .3rem;
-}
-
-footer .credits {
-  margin-bottom: 0;
-}
-
-footer .credits a {
-  color: #fff;
-}
-
-/*======================================
-//--//-->   CONtaCT FORM
-======================================*/
-
-#sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#sendmessage.show,
-#errormessage.show,
-.show {
-  display: block;
-}
-
-.validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-/*======================================
 //--//-->   BUTTON
 ======================================*/
 
@@ -1150,32 +897,11 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #0062d3;
+  background-color: darkred;
   color: #fff;
   transition: all 500ms ease;
 }
 
-.button-a {
-  background-color: #0078ff;
-  color: #fff;
-  border-color: #cde1f8;
-}
-
-.button-big {
-  padding: .9rem 2.3rem;
-  font-size: 1.2rem;
-}
-
-.button-rouded {
-  border-radius: 5rem;
-}
-
-.btn-lg {
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: .3rem;
-}
 
 @media (min-width: 577px) {
   .counter-box {
