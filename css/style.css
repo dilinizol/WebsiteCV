@@ -27,10 +27,6 @@ educationtitle{
   color: darkred;
 }
 
-skills{
-  font-style: italic;
-}
-
 projecttitle{
   font-weight: bold;
 }
@@ -41,7 +37,6 @@ tssmutitle,
 financerotaracttitle {
   color: #404040;
   font-size: 20px;
-  font-weight: bold;
 }
 
 t{
