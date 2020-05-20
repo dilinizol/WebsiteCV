@@ -13,6 +13,14 @@ body {
   background-color: #f5f5f5;
   color: #404040;
 }
+
+.typewrite {
+  color: white;
+}
+
+.typewrite:hover {
+  color: darkred;
+}
  
 h1,
 h2,
