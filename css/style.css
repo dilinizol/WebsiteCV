@@ -987,11 +987,17 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*mobile view*/
   .back-to-top {
     bottom: 15px;
   }
   .title-center {
     display: none;
+  }
+  .subtitle-a {
+    display: none;
+  }
+  .title-box {
+    padding-top: 5px;
   }
 }
