@@ -998,6 +998,12 @@ a:hover {
     display: none;
   }
   .row {
-    padding-top: 20px;
+    padding-top: 50px;
+  }
+  #resume .col-sm-12 {
+    padding-top: 50px;
+  }
+  #blog .content-section-heading {
+    padding-top: 50px;
   }
 }
