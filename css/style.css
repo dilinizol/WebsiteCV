@@ -911,7 +911,7 @@ a:hover {
     margin-bottom: 1.8rem;
   }
   .title-center {
-    margin-top: 10px;
+    display: none;
   }
 }
 
