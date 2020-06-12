@@ -997,7 +997,7 @@ a:hover {
   .subtitle-a {
     display: none;
   }
-  .title-box {
-    padding-top: 10px;
+  .container {
+    padding-top: 40px;
   }
 }
