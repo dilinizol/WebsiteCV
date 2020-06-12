@@ -994,16 +994,16 @@ a:hover {
   .title-center {
     display: none;
   }
-  .subtitle-a {
-    display: none;
-  }
   .row {
-    padding-top: 50px;
+    padding-top: 40px;
   }
   #resume .col-sm-12 {
     padding-top: 50px;
   }
   #blog .content-section-heading {
-    padding-top: 50px;
+    padding-top: 40px;
+  }
+  #blog .subtitle-a {
+    display: none;
   }
 }
